@@ -50,5 +50,11 @@ console.log(nameToProvinceMap);
 // Log each name and province with matching format "Name (Province)"
 console.log(names.map((name, index) => `${name}(${provinces[index]})`));
 
+//Logs the new array of province names in all uppercaseProvinces
+console.log(provinces.map(provinces => province.toUpperCase()));
+
+//Logs the array of name lengths
+console.log(names.mao(name => name.length));
+
 
 )
