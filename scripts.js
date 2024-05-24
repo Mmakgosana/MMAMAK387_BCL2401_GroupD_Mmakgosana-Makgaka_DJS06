@@ -54,7 +54,21 @@ console.log(names.map((name, index) => `${name}(${provinces[index]})`));
 console.log(provinces.map(provinces => province.toUpperCase()));
 
 //Logs the array of name lengths
-console.log(names.mao(name => name.length));
+console.log(names.map(name => name.length));
 
+// Logs the alphabetically sorted provinces
+console.log([...provinces].sort());
+
+// Logs the count of remaining provinces after filtering out those containing "Cape"
+console.log(provinces.filter(province => !province.includes('Cape')).length);
+
+// Log the boolean array for names containing 'S'
+console.log(names.map(name => name.includes('S')));
+
+// Log the object mapping names to their respective provinces
+console.log(names.reduce((obj, name, index) => {
+  obj[name] = provinces[index];
+  return obj;
+}, {}));
 
 )
