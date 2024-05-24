@@ -19,3 +19,9 @@ names.forEach(name => console.log(name));
 
 //Logs each province
 provinces.forEach(province => console.log(province));
+
+// Create a new array of province names in all Uppercase
+const uppercaseProvinces = provinces.map(province => province.toUpperCase());
+console.log(uppercaseProvinces);
+
+//
