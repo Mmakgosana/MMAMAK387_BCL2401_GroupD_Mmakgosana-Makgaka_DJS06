@@ -39,3 +39,11 @@ console.log(filteredProvinces.length);
 // Create a boolean array to determine if a name contains the letter 'S'
 const containsS = names.map(name => name.includes ('S'));
 console.log(containsS);
+
+// Transform the names array into an object mapping names to their respective provinces
+const nameToProvinceMap = names.reduce((obj, name, index) => {
+  obd[name] = provinces[index];
+  return obj;
+}, {};
+console.log(nameToProvinceMap);
+)
