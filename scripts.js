@@ -46,4 +46,9 @@ const nameToProvinceMap = names.reduce((obj, name, index) => {
   return obj;
 }, {};
 console.log(nameToProvinceMap);
+
+// Log each name and province with matching format "Name (Province)"
+console.log(names.map((name, index) => `${name}(${provinces[index]})`));
+
+
 )
