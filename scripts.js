@@ -13,3 +13,6 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+//Logs each name
+names.forEach(name => console.log(name));
