@@ -16,3 +16,6 @@ const products = [
 
 //Logs each name
 names.forEach(name => console.log(name));
+
+//Logs each province
+provinces.forEach(province => console.log(province));
